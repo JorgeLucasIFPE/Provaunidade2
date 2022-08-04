@@ -12,10 +12,11 @@ public class DonatorModel {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
 
     @Column
     private String name;
+    
     @Column
     private String address;
 
@@ -27,6 +28,7 @@ public class DonatorModel {
 
     @Column
     private String description;
+
 
     public int getId() {
         return id;

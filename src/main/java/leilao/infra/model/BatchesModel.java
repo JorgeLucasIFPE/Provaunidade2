@@ -18,6 +18,23 @@ public class BatchesModel {
     @Column
     private Long observation;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="donator_id")
+    // Call DonetorModel.id
+    public DonatorModel donator.getId();
+    
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name="product_id")
+    // Call DonetorModel.id
+    public ProductModel product.getId();
+    
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="overseer_id")
+    // Call DonetorModel.id
+    public OverseerModel overseer.getId()
+    
+
+
     public Long getId() {
         return id;
     }
