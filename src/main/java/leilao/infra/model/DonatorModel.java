@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+
 import javax.persistence.Table;
 
 @Entity
@@ -12,11 +13,10 @@ public class DonatorModel {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private int id;
 
     @Column
     private String name;
-    
     @Column
     private String address;
 
@@ -28,7 +28,6 @@ public class DonatorModel {
 
     @Column
     private String description;
-
 
     public int getId() {
         return id;

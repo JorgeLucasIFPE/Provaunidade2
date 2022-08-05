@@ -3,7 +3,7 @@ package leilao.infra.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Overseer")
+@Table(name = "overseer")
 public class OverseerModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
