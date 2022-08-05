@@ -1,0 +1,45 @@
+#modalMain > .nome {
+    font-size: 40px;
+}
+
+.lotes {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.lote {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.lote > .id {
+    font-size:30px;
+}
+
+.lote > .dataDeEntrega {
+    font-size: 26px;
+}
+
+
+
+.produtos {
+    text-align: start;
+    font-size: 20px;
+}
+
+.legendaProdutos, .produto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legendaProdutos {
+    font-size:23px;
+    font-weight: bold;
+}
+
+
