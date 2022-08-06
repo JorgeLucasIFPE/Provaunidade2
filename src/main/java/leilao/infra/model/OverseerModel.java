@@ -1,10 +1,18 @@
 package leilao.infra.model;
 
+import java.io.Serializable;
+
 import javax.persistence.*;
 
+import lombok.*;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
-@Table(name = "Overseer")
-public class OverseerModel {
+@Table(name = "overseer")
+public class OverseerModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -15,27 +23,4 @@ public class OverseerModel {
     @Column
     private String description;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

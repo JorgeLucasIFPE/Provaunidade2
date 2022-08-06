@@ -1,10 +1,16 @@
 package leilao.infra.model;
 
+import java.io.Serializable;
 import javax.persistence.*;
+import lombok.*;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
-@Table(name = "batches")
-public class ProductModel {
+@Table(name = "product")
+public class ProductModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long code;
@@ -14,29 +20,5 @@ public class ProductModel {
 
     @Column
     private String description;
-
-    public long getCode() {
-        return code;
-    }
-
-    public void setCode(long code) {
-        this.code = code;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
 }
