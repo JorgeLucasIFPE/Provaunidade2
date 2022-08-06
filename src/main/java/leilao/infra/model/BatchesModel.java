@@ -1,7 +1,7 @@
 package leilao.infra.model;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalTime;
 
 import javax.persistence.*;
 
@@ -20,7 +20,7 @@ public class BatchesModel implements Serializable {
     private Long batch_id;
 
     @Column
-    private Date delieverDate;
+    private LocalTime delieverDate;
 
     @Column
     private String observation;
