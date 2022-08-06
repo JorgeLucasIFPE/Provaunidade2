@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Bazar</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/sistemaDeBazar.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <link rel="stylesheet" href="../style/lotes.css">
+    <script src="../js/bazar.js" defer="defer"></script>
+</head>
+
+<body>
+    <div id="abrirModal" class="modal">
+        <div id="modalMain">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <span class="nome">IPHAN</span>
+            <div id="lotes">
+                <div class="lote">
+                    <span class="id">001</span>
+                    <span class="dataDeEntrega">01/06/2001</span>
+                    <div class="produtos">
+                        <div class="legendaProdutos">
+                            <span class="legendaProduto">Produto</span>
+                            <span class="legendaDescricao">Descricao</span>
+                        </div>
+                        <div class="produto">
+                            <span class="nome">Boneco</span>
+                            <span class="descricao">De pano</span>
+                        </div>
+                        <div class="produto">
+                            <span class="nome">Boneca</span>
+                            <span class="descricao">De lata</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lote">
+                    <span class="id">002</span>
+                    <span class="dataDeEntrega">02/06/2002</span>
+                    <div class="produtos">
+                        <div class="produto">
+                            <span class="nome">carrinho</span>
+                            <span class="descricao">vrum</span>
+                        </div>
+                        <div class="produto">
+                            <span class="nome">carrinha</span>
+                            <span class="descricao">vra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Sistema de Bazar</h1>
+    <h1 id="bota">bota</h1>
+    <div id="entidades">
+        <div class="entidade" href="#abrirModal">
+            <span class="nome">Iphan</span>
+            <span class="endereco">caxanga</span>
+            <span class="horario">00:00 até 23>59</span>
+            <span class="telefone">40028922</span>
+        </div>
+        <div class="entidade">
+            <span class="nome">IFP</span>
+            <span class="endereco">Recife</span>
+            <span class="horario">00:00 até 12:00</span>
+            <span class="telefone">88889999</span>
+        </div>
+
+</body>
+
+</html>
