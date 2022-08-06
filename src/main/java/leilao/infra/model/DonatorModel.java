@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.*;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -18,7 +17,7 @@ public class DonatorModel {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
 
     @Column
     private String name;

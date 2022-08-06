@@ -27,7 +27,8 @@ public class OverseerController {
     @ResponseStatus(HttpStatus.OK)
 
     public List<OverseerModel> listAll() {
-        return overseerRepo.findAll();
+        List<OverseerModel> overseer = overseerRepo.findAll();
+        return overseer;
     }
 
     @PostMapping

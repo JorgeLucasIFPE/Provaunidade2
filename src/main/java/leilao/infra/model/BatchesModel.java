@@ -16,7 +16,7 @@ import lombok.*;
 public class BatchesModel implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long batch_id;
 
     @Column

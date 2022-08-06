@@ -21,4 +21,8 @@ public class ProductModel implements Serializable {
     @Column
     private String description;
 
+    @ManyToOne
+    @JoinColumn(name = "batch_id", nullable = false)
+    public BatchesModel batch;
+
 }
