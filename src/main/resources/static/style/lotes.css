@@ -2,10 +2,10 @@
     font-size: 40px;
 }
 
-.lotes {
+#lotes {
     display:flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .lote {

@@ -1,0 +1,21 @@
+table {
+    font-size: 25px;
+}
+
+tr {
+    border: 1px solid black;
+    padding:5px;
+}
+th {
+    padding: 5px;
+}
+
+h1 {
+    margin: 5px;
+    
+}
+
+a {
+    margin: 20px;
+    display:block;
+}
